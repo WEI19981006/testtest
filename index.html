@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <p>這是一個問題</p>
+        <p v-show="showAnswer">這是答案</p>
+        <button v-on:click="showAnswer = !showAnswer">{{showAnswer?"隱藏":"顯示"}}答案</button>
+    </div>
+    <script src="./all.js"></script>
+</body>
+
+</html>
